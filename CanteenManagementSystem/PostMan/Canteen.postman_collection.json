@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "65a60276-cb3c-4930-b132-a41c6d74ebf2",
+		"name": "Canteen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Check-Emp-Bal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7879/admin/check/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"admin",
+								"check",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View-By-Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7879/admin/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"admin",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add-Money",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empName\":\"Vicky Kumar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7879/admin/addMoney/2/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"admin",
+								"addMoney",
+								"2",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add-Emp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empName\":\"Vicky Kumar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7879/admin/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"admin",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7879/admin/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"admin",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "Add-new-Items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"rice\",\r\n    \"itemPrice\":\"50\",\r\n    \"quantity\":\"50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7879/item/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"item",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View-All-Item",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"rice\",\r\n    \"itemPrice\":\"50\",\r\n    \"quantity\":\"50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7879/item/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"item",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add-item-of-day",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"rice\",\r\n    \"itemPrice\":\"50\",\r\n    \"quantity\":\"50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7879/item/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"item",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset-Item-of-day",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"itemName\":\"rice\",\r\n    \"itemPrice\":\"50\",\r\n    \"quantity\":\"50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7879/item/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"item",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emp",
+			"item": [
+				{
+					"name": "check-balance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7879/emp/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"emp",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View-Day-of item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7879/emp/viewDay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"emp",
+								"viewDay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-Mony",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7879/emp/4/1231",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"emp",
+								"4",
+								"1231"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add-new-Emp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empName\":\"vikram\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7879/emp/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7879",
+							"path": [
+								"emp",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
